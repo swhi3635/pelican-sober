@@ -8,6 +8,10 @@
 	{% block extra_meta %}
 	{% endblock %}
 
+ 	{% if article %}
+ 	<link rel="canonical" href="{{ SITEURL }}/{{ article.url }}"/>
+ 	{% endif %}
+
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		
     {% if PELICAN_SOBER_STICKY_SIDEBAR %}
