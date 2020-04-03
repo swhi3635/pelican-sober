@@ -259,6 +259,7 @@ ol.archive li .tags
 }
 .social a[href*='twitter.com'] + i:before {content: url('../images/icons/twitter-18px.png'); }
 .social a[href*='instagram.com'] + i:before {content: url('../images/icons/instagram-18px.png'); }
+.social a[href*='mailto:'] + i:before {content: url('../images/icons/email-18px.png'); }
 .social a[href*='linkedin.com'] + i:before {content: url('../images/icons/linkedin-18px.png'); }
 .social a[href*='github.com'] + i:before {content: url('../images/icons/github-18px.png'); }
 .social a[href*='google.com'] + i:before {content: url('../images/icons/google-18px.png'); }
