@@ -27,6 +27,9 @@
     {% if FEED_ALL_RSS %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
     {% endif %}
+    {% if article or articles_page %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/lightbox.min.css">
+    {% endif %}
 </head>
 	
 <body>
@@ -115,5 +118,8 @@
 
 	</div>
         {% include "analytics.html" %}
+        {% if article or articles_page %}
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/lightbox-plus-jquery.min.js"></script>
+        {% endif %}
 </body>
 </html>
